@@ -1,11 +1,20 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0 auto;
     width: 100%;
+    height: 1700px;
     max-width: 1080px;
     min-width: 320px;
     font-size: 14px;
     color: #666;
     line-height: 1.5;
+    background-color: #f6f6f6;
 }
 
 ul,
@@ -13,6 +22,11 @@ li {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
 }
 
 
@@ -201,4 +215,324 @@ li {
     line-height: 0;
     border-radius: 5px;
     background-color: #666;
+}
+
+#nav {
+    position: relative;
+    height: 169px;
+}
+
+#nav a {
+    float: left;
+    width: 20%;
+    height: 77px;
+    font-size: 12px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+#nav a img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 41px;
+    height: 41px;
+}
+
+#nav a span {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.nav_point {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    font-size: 0;
+    text-align: center;
+}
+
+.nav_point span {
+    margin: 0 2px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    line-height: 0;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+#seckill {
+    overflow: hidden;
+    height: 140px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#seckill .seckill_top {
+    overflow: hidden;
+    height: 35px;
+    background: url(../images/seckill_img1.png);
+    background-size: contain;
+}
+
+.seckill_left_link {
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    display: block;
+}
+
+.seckill_left_link .sck_l_tit {
+    margin: 8px 5px 0 10px;
+    float: left;
+    height: 100%;
+    color: #333;
+    text-align: center;
+}
+
+.sck_l_time {
+    overflow: hidden;
+    margin-top: 8px;
+    margin-right: 0;
+}
+
+.sck_l_time1 {
+    float: left;
+    margin: 0 4px 0 0;
+    padding: 0 spx;
+    color: #ff2727;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.sck_l_time1::after {
+    width: 21px;
+    height: 18px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/seckill_img2.png);
+    background-size: contain;
+    background-position: 50%;
+}
+
+.sck_l_time2 {
+    float: right;
+    height: 100%;
+    margin-right: 4px;
+}
+
+.sck_h,
+.sck_m,
+.sck_s {
+    float: left;
+    width: 15px;
+    height: 18px;
+    background-color: #fc4130;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sck_l_time2 span {
+    float: left;
+    display: block;
+    font-size: 12px;
+    color: #fc4130;
+    font-size: 700;
+}
+
+.seckill_more_link {
+    position: relative;
+    padding-right: 22px;
+    float: right;
+    display: block;
+    width: 20%;
+    height: 100%;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fc4130;
+}
+
+.seckill_more_link i {
+    position: absolute;
+    top: 9.5px;
+    right: 11px;
+    width: 11px;
+    height: 11px;
+    background: url(../images/seckill_img3.png);
+    background-size: cover;
+}
+
+.seckill_bottom {
+    margin: 0 6px;
+    height: 104px;
+    /* background-color: red; */
+}
+
+.seckill_bottom ul {
+    height: 100%;
+}
+
+.seckill_bottom li {
+    float: left;
+    padding-top: 10px;
+    width: 16.6%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.seckill_bottom li img {
+    width: 100%;
+    height: auto;
+    padding: 0 1px;
+}
+
+.seckill_bottom li .sck_price {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    color: #fc4130;
+    font-weight: 700;
+}
+
+
+/* 新人专享 */
+
+#newperson {
+    overflow: hidden;
+    margin: 0 10px 10px 10px;
+    height: 162px;
+    background-color: #fff1f1;
+    border-radius: 8px;
+}
+
+#newperson .newp_top {
+    height: 35px;
+    width: 100%;
+    background: url(../upload/newperson_img1.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#newperson .newp_bottom {
+    height: 127px;
+}
+
+#newperson .newp_bottom li {
+    float: left;
+    height: 100%;
+    width: 25%;
+    /* background-color: #fff; */
+}
+
+#newperson .newp_bottom li img {
+    width: 100%;
+    height: 100%;
+}
+
+.newp_card {
+    height: 60px;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+
+.newp_card img {
+    width: 100%;
+    height: 50px;
+}
+
+
+/* 商品模块 */
+
+#goods {
+    /* margin-bottom: 100px; */
+    padding: 5px;
+    height: 602px;
+    /* background-color: red; */
+}
+
+.goods_box {
+    float: left;
+    padding: 5px;
+    width: 50%;
+    height: 301px;
+    box-sizing: border-box;
+}
+
+#goods .goods_item {
+    overflow: hidden;
+    /* width: 50%; */
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.goods_img {
+    width: 100%;
+    height: 179px;
+    margin-bottom: 5px;
+}
+
+.goods_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.goods_info {
+    padding: 0 10px 10px 10px;
+}
+
+.goods_info_desc img {
+    width: 45px;
+    height: 14px;
+}
+
+.goods_info_desc {
+    height: 43px;
+    color: #434343;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+}
+
+.goods_info_price {
+    font-size: 20px;
+    color: #ff4142;
+}
+
+.goods_info_price span {
+    padding: 0 1px;
+    border: 1px solid #fc4130;
+    font-size: 12px;
+}
+
+.goods_info_pinglun img {
+    vertical-align: middle;
+    width: 24px;
+    height: 14px;
+}
+
+.goods_info_pinglun span {
+    font-size: 12px;
+    color: #999;
+}
+
+.goods_info_pinglun span:nth-child(3) {
+    padding: 2px 10px;
+    float: right;
+    color: #262626;
+    background-color: #F2F2f2;
+    border-radius: 12px;
+    font-weight: 500;
 }
